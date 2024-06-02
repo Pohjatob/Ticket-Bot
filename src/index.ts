@@ -11,7 +11,7 @@ import { GatewayIntentBits } from "discord.js";
 import { jsonc } from "jsonc";
 import { config as envconf } from "dotenv";
 import {ConfigType, ExtendedClient} from "./structure";
-
+const Client = new Discord.Client();
 // Initalize .env file as environment
 try {envconf();}
 catch(ex) {console.log(".env failed to load");}
